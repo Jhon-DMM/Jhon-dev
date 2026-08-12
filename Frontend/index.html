@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="encabezado">
+    <h1 class="titulo">Jhon.Dev</h1>
+    <!--navegación-->
+    <nav>
+      <!--ul para crear la lista de navegación-->
+      <ul class="navegacion">
+       <li><a href="#inicio" class="activo">Inicio</a></li>
+       <li><a href="#sobre-mi">Sobre mí</a></li>
+       <li><a href="#habilidades">Habilidades</a></li>
+       <li><a href="#proyectos">Proyectos</a></li>
+       <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--creo el hero con su clase, para futuras ediciones en css-->
+    <section id="inicio" class="hero">
+      <div class="hero-text">
+        <p>DESARROLLADOR FRONTEND EN FORMACIÓN</p>
+        <h2>Hola, soy Jhon</h2>
+        <p>Me gusta crear experiencias web modernas, funcionales y con proposito</p>
+        <a href="#">Contactame</a>
+      </div>
+      <!--un div nuevo, para añadir futuras imágenes en el hero-->
+      <div class="hero-img">
+        ....
+      </div>
+    </section>
+    <!--creo la sección "sobre mí" en la hablare de mi mismo-->
+    <section id="sobre-mi" class="sobre-mi">
+      <div class="sobre-mi-text">
+        <h2>Sobre mí</h2>
+        <p>soy un desarrollador en formación, apasionado por la tecnología y el diseño. Me encanta aprender cosas nuevas y enfrentar desafios que me ayuden a mejorar cada vez más.</p>
+        <a href="#">conoceme más</a>
+      </div>
+    </section>
+    <!--creo la sección "habilidades" y agrego las que he usado-->
+    <section id="habilidades" class="habilidades">
+      <h2>Habilidades</h2>
+      <div class="habilidad">
+        <img src="./img/html.svg" alt="Logo de HTML"> <!--logo de la herramienta-->
+          <div>
+            <h3>HTML5</h3>
+            <p>Avanzado</p>
+            <div class="barra"> <!--para crear la barra de progreso-->
+                <div class="progreso"></div> <!--indicador de progreso-->
+            </div>
+        </div>
+     </div>
+     <!--lo repito para cada habilidad que he usado-->
+     <div class="habilidad">
+        <img src="./img/css.svg" alt="Logo de CSS">
+          <div>
+            <h3>CSS3</h3>
+            <p>Intermedio</p>
+            <div class="barra">
+                <div class="progreso"></div>
+            </div>
+        </div>
+     </div>
+     <div class="habilidad">
+        <img src="./img/js.svg" alt="Logo de JavaScript">
+          <div>
+            <h3>JavaScript</h3>
+            <p>principiante</p>
+            <div class="barra">
+                <div class="progreso"></div>
+            </div>
+        </div>
+     </div>
+     <div class="habilidad">
+        <img src="./img/python.svg" alt="Logo de Python">
+          <div>
+            <h3>Python</h3>
+            <p>Básico</p>
+            <div class="barra">
+                <div class="progreso"></div>
+            </div>
+        </div>
+     </div>
+     <div class="habilidad">
+        <img src="./img/git.svg" alt="Logo de git">
+          <div>
+            <h3>Git</h3>
+            <p>Básico</p>
+            <div class="barra">
+                <div class="progreso"></div>
+            </div>
+        </div>
+     </div>
+    </section>
+    <section id="proyectos" class="proyectos">
+    <h2>Mis proyectos</h2>
+
+    <div class="proyecto">
+        <h3>Codexia</h3>
+        <p>Sitio web para empresa de desarrollo de software</p>
+        <a href="https://codxia.netlify.app/" target="_blank">Ver proyecto</a>
+    </div>
+</section>
+    <section id="contacto" class="contacto">
+      <h2>Contáctame</h2>
+      <p>Gmail: jhxnmondragon@gmail.com</p>
+      <p>Teléfono: 3175036274</p>
+      <p>Ubicación: Cali, Colombia</p>
+    </section>
+  </main>
+  <footer>
+  <p>Copyright &copy; 2026 Jhon.Dev</p>
+  </footer>
+</body>
+</html>
