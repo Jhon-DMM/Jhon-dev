@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/script.js"></script>
 </head>
 <body>
   <header class="encabezado">
-    <h1 class="titulo">Jhon.Dev</h1>
+    <!--hago este enlace para que al presionar el título, me lleve al inicio-->
+    <a href="#inicio" class="titulo">
+      <h1 class="titulo">Jhon.Dev</h1>
+    </a>
+    <!--creo un botón para posteriormente crear un menú hambúrguesa-->
+    <button id="menu-button" class= "menu-button" type="button">☰</button>
     <!--navegación-->
-    <nav>
-      <!--ul para crear la lista de navegación-->
-      <ul class="navegacion">
-       <li><a href="#inicio" class="activo">Inicio</a></li>
-       <li><a href="#sobre-mi">Sobre mí</a></li>
-       <li><a href="#habilidades">Habilidades</a></li>
-       <li><a href="#proyectos">Proyectos</a></li>
-       <li><a href="#contacto">Contacto</a></li>
-      </ul>
+    <nav id="menu" class="menu">
+      <a href="#sobre-mi" class="navegacion-item">Sobre mí</a>
+      <a href="#habilidades" class="navegacion-item">Habilidades</a>
+      <a href="#proyectos" class="navegacion-item">Proyectos</a>
+      <a href="#contact-button" class="navegacion-item">Contacto</a>
     </nav>
   </header>
   <main>
@@ -99,23 +101,37 @@
      </div>
     </section>
     <section id="proyectos" class="proyectos">
-    <h2>Mis proyectos</h2>
+     <h2>Mis proyectos</h2>
 
-    <div class="proyecto">
+     <div class="proyecto">
         <h3>Codexia</h3>
         <p>Sitio web para empresa de desarrollo de software</p>
         <a href="https://codxia.netlify.app/" target="_blank">Ver proyecto</a>
-    </div>
-</section>
-    <section id="contacto" class="contacto">
-      <h2>Contáctame</h2>
-      <p>Gmail: jhxnmondragon@gmail.com</p>
-      <p>Teléfono: 3175036274</p>
-      <p>Ubicación: Cali, Colombia</p>
+      </div>
     </section>
+   <!-- creo la informacion de contacto como un boton para que luego mi sirva para crear una ventana-->
+    <button type="button" id="contact-button" class="contacto">
+      <h2>Contáctame</h2>
+      <p>para que podamos trabajar juntos</p>
+    </button>
+      
+     <!-- creo un Modal de contacto -->
+    <div id="contact-modal">
+        <div>
+            <button type="button" id="close-button">×</button>
+
+            <h2>¿Deseas que hablemos?</h2>
+            <p>Elige cómo quieres contactarme.</p>
+            
+            <!-- creo los enlaces de contacto, y doy un mensaje inicial-->
+            <a href="https://wa.me/573175036274?text=Hola%20Jhon%2C%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo." target="_blank">WhatsApp</a>
+            <a href="mailto:jhxnmondragon@gmail.com?subject=Contacto%20de%20Jhon.Dev">Correo</a>
+        </div>
+    </div>
+
   </main>
   <footer>
-  <p>Copyright &copy; 2026 Jhon.Dev</p>
+    <p>Copyright &copy; 2026 Jhon.Dev</p>
   </footer>
 </body>
 </html>
