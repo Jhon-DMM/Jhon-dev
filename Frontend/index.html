@@ -29,38 +29,50 @@
       <div class="hero-text">
         <p>DESARROLLADOR FRONTEND EN FORMACIÓN</p>
         <h2>Hola, soy Jhon</h2>
-        <p>Me gusta crear experiencias web modernas, funcionales y con proposito</p>
-        <a href="#">Contactame</a>
+        <p>Me gusta crear experiencias web modernas, funcionales y con propósito</p>
+        <a href="#proyectos">Ver mis proyectos</a>
       </div>
-      <!--un div nuevo, para añadir futuras imágenes en el hero-->
+        <!--creo un div especial, donde ira mi foto-->
       <div class="hero-img">
-        ....
+        <img src="./img/jhon.jpg" alt="Foto de Jhon" class="hero-image">
       </div>
+
     </section>
     <!--creo la sección "sobre mí" en la hablare de mi mismo-->
     <section id="sobre-mi" class="sobre-mi">
       <div class="sobre-mi-text">
         <h2>Sobre mí</h2>
         <p>soy un desarrollador en formación, apasionado por la tecnología y el diseño. Me encanta aprender cosas nuevas y enfrentar desafios que me ayuden a mejorar cada vez más.</p>
-        <a href="#">conoceme más</a>
+        <button id="about-button">Conoceme más</button>
       </div>
     </section>
+    <!--creo la modal "sobre mí" donde añadire un poco mas sobre mi-->
+    <div id="about-modal" class="modal">
+      <div class="modal-content">
+        <button id="about-close-button">✕</button>
+        <h2>Sobre mí</h2>
+        <p>
+          Aquí irá el texto completo sobre mí...
+        </p>
+    </div>
+</div>
     <!--creo la sección "habilidades" y agrego las que he usado-->
     <section id="habilidades" class="habilidades">
-      <h2>Habilidades</h2>
-      <div class="habilidad">
-        <img src="./img/html.svg" alt="Logo de HTML"> <!--logo de la herramienta-->
+      <h2>mis Habilidades</h2>
+      <div class="habilidad-contenido">
+        <div class="skill">
+          <img src="./img/html.svg" alt="Logo de HTML"> <!--logo de la herramienta-->
           <div>
             <h3>HTML5</h3>
             <p>Avanzado</p>
             <div class="barra"> <!--para crear la barra de progreso-->
-                <div class="progreso"></div> <!--indicador de progreso-->
+              <div class="progreso"></div> <!--indicador de progreso-->
             </div>
+          </div>
         </div>
-     </div>
-     <!--lo repito para cada habilidad que he usado-->
-     <div class="habilidad">
-        <img src="./img/css.svg" alt="Logo de CSS">
+       <!--lo repito para cada habilidad que he usado-->
+        <div class="skill">
+          <img src="./img/css.svg" alt="Logo de CSS">
           <div>
             <h3>CSS3</h3>
             <p>Intermedio</p>
@@ -68,9 +80,9 @@
                 <div class="progreso"></div>
             </div>
         </div>
-     </div>
-     <div class="habilidad">
-        <img src="./img/js.svg" alt="Logo de JavaScript">
+       </div>
+       <div class="skill">  
+          <img src="./img/js.svg" alt="Logo de JavaScript">
           <div>
             <h3>JavaScript</h3>
             <p>principiante</p>
@@ -78,9 +90,9 @@
                 <div class="progreso"></div>
             </div>
         </div>
-     </div>
-     <div class="habilidad">
-        <img src="./img/python.svg" alt="Logo de Python">
+       </div>
+       <div class="skill">  
+          <img src="./img/python.svg" alt="Logo de Python">
           <div>
             <h3>Python</h3>
             <p>Básico</p>
@@ -88,9 +100,9 @@
                 <div class="progreso"></div>
             </div>
         </div>
-     </div>
-     <div class="habilidad">
-        <img src="./img/git.svg" alt="Logo de git">
+       </div>
+       <div class="skill">  
+          <img src="./img/git.svg" alt="Logo de git">
           <div>
             <h3>Git</h3>
             <p>Básico</p>
@@ -98,18 +110,28 @@
                 <div class="progreso"></div>
             </div>
         </div>
-     </div>
-    </section>
-    <section id="proyectos" class="proyectos">
-     <h2>Mis proyectos</h2>
-
-     <div class="proyecto">
-        <h3>Codexia</h3>
-        <p>Sitio web para empresa de desarrollo de software</p>
-        <a href="https://codxia.netlify.app/" target="_blank">Ver proyecto</a>
+       </div>
       </div>
     </section>
-   <!-- creo la informacion de contacto como un boton para que luego mi sirva para crear una ventana-->
+    <section id="proyectos" class="proyectos">
+     <article class="proyectos-contentenido">
+      <h2>Mis proyectos</h2>
+
+      <div class="proyecto-tarjeta">
+        <div class="proyecto-img">
+          <img src="./img/codxia.jpg" alt="Codexia">
+        </div>
+        <div class="proyecto-contenido">
+          <h3>Codexia</h3>
+          <p>Sitio web para empresa de desarrollo de software</p>
+          <a href="https://codxia.netlify.app/" target="_blank">Ver proyecto</a>
+        </div>
+
+        </div>
+      </div>
+     </article>
+    </section>
+   <!-- creo la informacion de contacto como un botón para que luego mi sirva para crear una ventana-->
     <button type="button" id="contact-button" class="contacto">
       <h2>Contáctame</h2>
       <p>para que podamos trabajar juntos</p>
@@ -124,14 +146,22 @@
             <p>Elige cómo quieres contactarme.</p>
             
             <!-- creo los enlaces de contacto, y doy un mensaje inicial-->
-            <a href="https://wa.me/573175036274?text=Hola%20Jhon%2C%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo." target="_blank">WhatsApp</a>
-            <a href="mailto:jhxnmondragon@gmail.com?subject=Contacto%20de%20Jhon.Dev">Correo</a>
+            <div class="contact-links">
+              <img src="./img/wh.svg" alt="Logo de WhatsApp">
+             <a href="https://wa.me/573175036274?text=Hola%20Jhon%2C%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo." target="_blank">WhatsApp</a>
+              <img src="./img/gmail.svg" alt="Logo de Gmail">
+             <a href="mailto:jhxnmondragon@gmail.com?subject=Contacto%20de%20Jhon.Dev">Correo</a>
+            </div>
         </div>
     </div>
 
   </main>
-  <footer>
+  <footer class="footer">
     <p>Copyright &copy; 2026 Jhon.Dev</p>
+    <div class="footer-links">
+      <a href="https://github.com/Jhon-DMM">GitHub</a>
+    </div>
+    <a href="#inicio">Volver al inicio</a>
   </footer>
 </body>
 </html>
