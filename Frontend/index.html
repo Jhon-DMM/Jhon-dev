@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio</title>
   <link rel="stylesheet" href="./css/styles.css">
-  <script src="./js/script.js"></script>
 </head>
 <body>
   <header class="encabezado">
@@ -34,7 +33,7 @@
       </div>
         <!--creo un div especial, donde ira mi foto-->
       <div class="hero-img">
-        <img src="./img/jhon.jpg" alt="Foto de Jhon" class="hero-image">
+        <img src="./img/Img-inicial-Jhon.dev.png" alt="Foto de Jhon" class="hero-image">
       </div>
 
     </section>
@@ -54,8 +53,8 @@
         <p>
           Aquí irá el texto completo sobre mí...
         </p>
+      </div>
     </div>
-</div>
     <!--creo la sección "habilidades" y agrego las que he usado-->
     <section id="habilidades" class="habilidades">
       <h2>mis Habilidades</h2>
@@ -138,21 +137,19 @@
     </button>
       
      <!-- creo un Modal de contacto -->
-    <div id="contact-modal">
-        <div>
-            <button type="button" id="close-button">×</button>
-
-            <h2>¿Deseas que hablemos?</h2>
-            <p>Elige cómo quieres contactarme.</p>
-            
-            <!-- creo los enlaces de contacto, y doy un mensaje inicial-->
+    <div id="contact-modal" class="modal">
+      <div class="modal-content">
+        <button type="button" id="close-button">×</button>
+          <h2>¿Deseas que hablemos?</h2>
+          <p>Elige cómo quieres contactarme.</p>
+          <!-- creo los enlaces de contacto, y doy un mensaje inicial-->
             <div class="contact-links">
               <img src="./img/wh.svg" alt="Logo de WhatsApp">
              <a href="https://wa.me/573175036274?text=Hola%20Jhon%2C%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo." target="_blank">WhatsApp</a>
               <img src="./img/gmail.svg" alt="Logo de Gmail">
              <a href="mailto:jhxnmondragon@gmail.com?subject=Contacto%20de%20Jhon.Dev">Correo</a>
             </div>
-        </div>
+      </div>
     </div>
 
   </main>
@@ -163,5 +160,6 @@
     </div>
     <a href="#inicio">Volver al inicio</a>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>

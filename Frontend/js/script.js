@@ -29,7 +29,20 @@ document.addEventListener("keydown", function (event) {
 });
 
 menuButton.addEventListener("click", function () {
+    console.log("MENÚ PRESIONADO");
     menu.classList.toggle("active");
+    console.log(menu.classList);
+});
+
+document.addEventListener("click", function (event) {
+
+    if (
+        !menu.contains(event.target) &&
+        !menuButton.contains(event.target)
+    ) {
+        menu.classList.remove("active");
+    }
+
 });
 
 aboutButton.addEventListener("click", function () {
