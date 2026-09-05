@@ -8,21 +8,20 @@
 </head>
 <body>
   <div id="fondo-particulas"></div>
-  <header class="encabezado">
-    <!--hago este enlace para que al presionar el título, me lleve al inicio-->
+ <header class="encabezado">
+  <div class="encabezado-container">
     <a href="#inicio" class="titulo">
       <h1 class="titulo">Jhon.Dev</h1>
     </a>
-    <!--creo un botón para posteriormente crear un menú hambúrguesa-->
-    <button id="menu-button" class= "menu-button" type="button">☰</button>
-    <!--navegación-->
+    <button id="menu-button" class="menu-button" type="button">☰</button>
     <nav id="menu" class="menu">
       <a href="#sobre-mi" class="navegacion-item">Sobre mí</a>
       <a href="#habilidades" class="navegacion-item">Habilidades</a>
       <a href="#proyectos" class="navegacion-item">Proyectos</a>
       <a href="#contact-button" class="navegacion-item">Contacto</a>
     </nav>
-  </header>
+  </div>
+</header>
   <main>
     <!--creo el hero con su clase, para futuras ediciones en css-->
     <section id="inicio" class="hero">
@@ -30,7 +29,7 @@
         <p>DESARROLLADOR FRONTEND EN FORMACIÓN</p>
         <h2>Hola, soy Jhon</h2>
         <p>Me gusta crear experiencias web modernas, funcionales y con propósito</p>
-        <a href="#proyectos">Ver mis proyectos</a>
+        <a href="#habilidades">Ver mis habilidades</a>
       </div>
         <!--creo un div especial, donde ira mi foto-->
       <div class="hero-img">
@@ -127,11 +126,11 @@
           <p>Elige cómo quieres contactarme.</p>
           <!-- creo los enlaces de contacto, y doy un mensaje inicial-->
             <div class="contact-links">
-              <a href="..." target="logo whatsapp">
+              <a href="https://wa.me/573175036274?text=Hola%20Jhon%2C%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo." target="logo whatsapp">
                 <img src="./img/whatsapp-logo-png-.png" alt="logo de whatsapp">
                 <span>WhatsApp</span>
               </a>
-              <a href="mailto:..." target="logo gmail">
+              <a href="mailto:jhxnmondragon@gmail.com?subject=Contacto%20de%20Jhon.Dev" target="logo gmail">
                 <img src="./img/Gmail-logo.png" alt="logo de gmail">
                   <span>Correo</span>
               </a>
