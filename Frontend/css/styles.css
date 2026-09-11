@@ -572,6 +572,8 @@ h2 {
 
   .modal-content {
     padding: 50px;
+    max-height: 85vh;
+    overflow-y: auto;
   }
 
   #about-close-button:hover, #close-button:hover {
